@@ -8,7 +8,7 @@
 
     <span class="title">
         <a href="https://manonlclq5.artstation.com">
-            Mon portfolio d'artiste
+            &gt; Mon portfolio d'artiste &lt;
         </a>
     </span>
 
@@ -19,7 +19,7 @@
 
             <span class="paragraph">
                 Passionnée par le dessin depuis mes 9 ans, je maîtrise les
-                logiciels de dessin tels que Clip Studio Paint et PaintTool SAI.
+                logiciels de dessin tels que <span class="software">Clip Studio Paint</span> et <span class="software">PaintTool SAI</span>.
             </span>
         </div>
 
@@ -44,7 +44,7 @@
             <span class="title"> Blender </span>
 
             <span class="paragraph">
-                J’ai récemment commencé à prendre en main Blender. J'ai réalisé
+                J’ai récemment commencé à prendre en main <span class="software">Blender</span>. J'ai réalisé
                 quelques modèles 3D.
             </span>
         </div>
@@ -53,6 +53,10 @@
 </section>
 
 <style>
+
+    .software {
+        color: #e2714b;
+    }
     .title {
         font-family: "Electrolize", sans-serif;
         font-size: 32px;
@@ -67,7 +71,7 @@
 
     section {
         margin: 0px;
-        background-color: #243529;
+        background: url(/assets/bg-grain-dark.png), #243529;
         border: 10px solid #b0a990;
         box-sizing: border-box;
         display: flex;
@@ -77,6 +81,8 @@
 
     img {
         width: 400px;
+        margin: 100px;
+
     }
 
     div > div {

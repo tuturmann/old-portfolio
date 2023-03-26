@@ -1,5 +1,7 @@
 <script>
+    import { now } from "svelte/internal";
     import Header from "../components/Header.svelte";
+   
 </script>
 
 <svelte:head>
@@ -13,21 +15,25 @@
         <div>
             <span class="mainManon"> Leclercq Manon </span>
 
-            <img class="main-image" alt="main" src="/assets/main-image.jpg" />
+            <img class="main-image" alt="main" src="/assets/main.jpg" />
         </div>
 
         <div>
             <h1>Bienvenue</h1>
 
             <p>
-                Etudiante en BUT Informatique, je recherche une alternance en
-                informatique pour ma deuxième et troisième année de BUT.
+                J'ai 18 ans et je suis étudiante en BUT Informatique, je recherche une <em
+                    >alternance</em
+                > en développement/système pour ma deuxième et troisième année de
+                BUT.
             </p>
 
             <h1>Contact</h1>
 
             <p>
-                mmanon.leclercq@gmail.com <br />
+                <a href="mailto:mmanon.leclercq@gmail.com">
+                    mmanon.leclercq@gmail.com
+                </a> <br />
                 Mon compte
                 <a href="https://www.linkedin.com/in/manon-leclercq-789108264/">
                     LinkedIn
@@ -66,7 +72,7 @@
     }
     section {
         margin: 0px;
-        background-color: #243529;
+        background: url(/assets/bg-grain-dark.png), #243529;
         border: 10px solid #b0a990;
         box-sizing: border-box;
         display: flex;
@@ -78,7 +84,9 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        margin: 40px;
     }
+
     .main-image {
         border-radius: 25px;
         width: 315px;
@@ -91,11 +99,10 @@
     .mainManon {
         color: #e1e6e1;
         font-family: "Electrolize", sans-serif;
-        font-size: 50px;
+        font-size: 70px;
         position: absolute;
         z-index: 11;
-        border: 5px double #243529;
-        margin: 20px;
+        margin: 0 -50px;
     }
 
     h1 {
@@ -122,16 +129,11 @@
     }
 
     .footerUnPeu {
-        background: rgba(
-            108,
-            57,
-            57,
-            0.33
-        );
+        background: rgba(108, 57, 57, 0.33);
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin: 0px;
+        margin: 10px;
     }
 </style>

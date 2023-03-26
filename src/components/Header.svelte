@@ -6,6 +6,10 @@
         faArtstation,
         faLinkedin,
     } from "@fortawesome/free-brands-svg-icons";
+    import Cheeseburger from "../components/Cheeseburger.svelte";
+    let open = false;
+
+
 </script>
 
 <head>
@@ -52,16 +56,23 @@
     </div>
 
     <nav>
-        <a href="/"> à propos </a>
-        <a href="/informatique"> informatique </a>
-        <a href="/artiste"> artiste </a>
-        <Fa icon={faBars} />
+        <div class:open>
+            <a href="/"> à propos </a>
+            <a href="/informatique"> informatique </a>
+            <a href="/artiste"> artiste </a>
+        </div>
+            
+        <Cheeseburger/>
     </nav>
 </header>
 
 <style>
-    nav > a {
-        margin: 0 20px;
+    .open {
+        display: none;
+    }
+
+    nav {
+        margin: 0 10px;
         font-size: 20px;
         color: #e1e6e1;
     }
@@ -96,17 +107,20 @@
     nav {
         color: #e1e6e1;
         font-family: "Electrolize", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    nav > a:visited {
+    nav a:visited {
         color: #e1e6e1;
     }
 
-    nav > a:link {
+    nav a:link {
         text-decoration: none;
     }
-    nav > a:hover {
+    nav a:hover {
         text-decoration: underline;
-        transition: 2s;
     }
+    
 </style>

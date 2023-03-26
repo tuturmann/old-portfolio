@@ -21,11 +21,15 @@
     <!-- DEVELOPPEMENT D'APPLICATIONS -->
     <div>
         <div>
-            <span class="title"> Développement d'applications </span>
+            <span class="title"> Développement </span>
 
             <span class="paragraph">
-                J’aime réaliser des applications qui satisfont l’utilisateur.
-                Connaissances en <span class="language">Java</span>.
+                J'aime réaliser des <span class="language">jeux vidéo</span>, concevoir des univers, développer des personnages et construire des défis pour les joueurs. <br>
+                En tant que créatrice de jeux vidéo, j'aimerais pouvoir combiner mes compétences en programmation avec mon intérêt artistique. <br>
+                <br>
+                De plus, le développement de <span class="language">logiciels d'entreprise</span> m'intéresse. J’aime réaliser des applications qui résolvent des problèmes et satisfont l'utilisateur. <br> 
+                <br> Ces deux possibilités de développement me permettraient d'être stimulée intellectuellement, car ce sont des domaines en évolution constante. <br>
+                <br> Connaissances en <span class="language">Java</span>.
             </span>
         </div>
 
@@ -37,7 +41,7 @@
             <span class="title"> Administration système </span>
 
             <span class="paragraph">
-                J’aime automatiser mes tâches et paramétrer un système.
+                J’aime automatiser mes tâches et paramétrer un système. Pour moi, Linux représente un véritable terrain de jeu pour l'exploration et la personnalisation.
                 Connaissances en <span class="language">Bash</span> et
                 <span class="language">Python</span>.
             </span>
@@ -52,7 +56,8 @@
             <span class="title"> Cybersécurité </span>
 
             <span class="paragraph">
-                Je veux participer à rendre le monde informatique plus sûr.
+                J'aimerais faire partie de ceux qui travaillent pour améliorer la sécurité du monde informatique. Je suis motivée pour participer à créer des solutions qui permettront de limiter les menaces en ligne.
+                <br> Le métier de PenTester m'intéresse en particulier dans le domaine de la cybersécurité.
             </span>
         </div>
 
@@ -65,7 +70,7 @@
 
             <span class="paragraph">
                 J'aime exprimer ma créativité au travers de la création de sites
-                web. Connaissances en <span class="language">Svelte</span>.
+                web. Mes connaissances en <span class="language"> Svelte </span> sont encore en développement, mais je suis impatiente de développer davantage mes compétences.
             </span>
         </div>
 
@@ -76,7 +81,7 @@
 <style>
     section {
         margin: 0px;
-        background-color: #243529;
+        background: url(/assets/bg-grain-dark.png), #243529;
         border: 10px solid #b0a990;
         box-sizing: border-box;
         display: flex;
@@ -86,6 +91,7 @@
 
     img {
         width: 400px;
+        margin: 100px;
     }
 
     div > div {
@@ -108,16 +114,17 @@
         font-family: "Electrolize", sans-serif;
         font-size: 19px;
         color: #e1e6e1;
+        text-align: center;
     }
 
     .language {
         color: #e2714b;
     }
-
+    
     section > div:nth-child(even) {
         margin: 200px 0;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-direction: row-reverse;
     }
 
@@ -126,4 +133,5 @@
         display: flex;
         justify-content: center;
     }
+
 </style>
