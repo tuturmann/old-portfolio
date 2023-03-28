@@ -141,6 +141,7 @@
         background: url(/assets/bg-grain-dark.png), #243529;
         border: 2px solid #b0a990;
         box-sizing: border-box;
+        min-height: 100vh;
         display: flex;
         height: 100%;
         flex-direction: column;

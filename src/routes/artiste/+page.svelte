@@ -2,6 +2,14 @@
     import Header from "../../components/Header.svelte";
 </script>
 
+<svelte:head>
+    <title>Artiste</title>
+    <meta
+        name="description"
+        content="Portfolio Manon Leclercq : section Artiste"
+    />
+</svelte:head>
+
 <section>
     <!-- faire la barre marron en haut, mettre les svg, positionner les trucs -->
 
