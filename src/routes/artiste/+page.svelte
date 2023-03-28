@@ -4,7 +4,6 @@
 
 <section>
     <!-- faire la barre marron en haut, mettre les svg, positionner les trucs -->
-    <Header />
 
     <span class="title">
         <a href="https://manonlclq5.artstation.com">
@@ -67,16 +66,6 @@
         font-family: "Electrolize", sans-serif;
         font-size: 19px;
         color: #e1e6e1;
-    }
-
-    section {
-        margin: 0px;
-        background: url(/assets/bg-grain-dark.png), #243529;
-        border: 10px solid #b0a990;
-        box-sizing: border-box;
-        display: flex;
-        height: 100%;
-        flex-direction: column;
     }
 
     img {

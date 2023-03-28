@@ -1,9 +1,6 @@
 <script>
-    import Header from "./Header.svelte";
-    let open = false;
-    function handleClick() {
-        open = !open;
-    }
+    export let open = false;
+    export let handleClick;
 </script>
 
 <section>

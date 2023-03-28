@@ -13,8 +13,6 @@
 <section>
     <!-- faire la barre marron en haut, mettre les svg, positionner les trucs -->
 
-    <Header />
-
     <span class="title">
         Les aspects de l'informatique qui m'intéressent :
     </span>
@@ -79,16 +77,6 @@
 </section>
 
 <style>
-    section {
-        margin: 0px;
-        background: url(/assets/bg-grain-dark.png), #243529;
-        border: 10px solid #b0a990;
-        box-sizing: border-box;
-        display: flex;
-        height: 100%;
-        flex-direction: column;
-    }
-
     img {
         width: 400px;
         margin: 100px;

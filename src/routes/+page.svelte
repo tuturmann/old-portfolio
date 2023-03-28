@@ -10,7 +10,6 @@
 </svelte:head>
 
 <section>
-    <Header />
     <main>
         <div>
             <span class="mainManon"> Leclercq Manon </span>
@@ -70,16 +69,7 @@
     main > div:first-of-type {
         position: relative;
     }
-    section {
-        margin: 0px;
-        background: url(/assets/bg-grain-dark.png), #243529;
-        border: 10px solid #b0a990;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        min-height: 100vh;
-    }
+    
     main {
         display: flex;
         align-items: center;

@@ -6,12 +6,11 @@
         faArtstation,
         faLinkedin,
     } from "@fortawesome/free-brands-svg-icons";
-    import Cheeseburger from "./Cheeseburger.svelte";
+    import Cheeseburger from "../components/Cheeseburger.svelte";
     let open = false;
     function handleClick() {
         open = !open;
     }
-    $: console.log("open = ", open)
 
 
 </script>
@@ -69,6 +68,9 @@
         <Cheeseburger {open} {handleClick} />
     </nav>
 </header>
+<section>   
+    <slot/>
+</section>
 
 <style>
     .open {
@@ -96,6 +98,7 @@
         justify-content: space-between;
         font-size: 30px;
         padding: 10px;
+        background: url(/assets/bg-grain-dark.png), #3c372e;
     }
 
     .icon {
@@ -133,5 +136,13 @@
     nav a:hover {
         text-decoration: underline;
     }
-    
+    section{
+        margin: 0px;
+        background: url(/assets/bg-grain-dark.png), #243529;
+        border: 2px solid #b0a990;
+        box-sizing: border-box;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+    }    
 </style>
