@@ -24,10 +24,10 @@
         <div>
             <span class="title"> Logiciels </span>
 
-            <span class="paragraph">
+            <p>
                 Passionnée par le dessin depuis mes 9 ans, je maîtrise les
                 logiciels de dessin tels que <span class="software">Clip Studio Paint</span> et <span class="software">PaintTool SAI</span>.
-            </span>
+            </p>
         </div>
 
         <img alt="blender" src="assets/svg_painting.svg" />
@@ -37,10 +37,10 @@
         <div>
             <span class="title"> Projets professionnels et personnels </span>
 
-            <span class="paragraph">
+            <p>
                 J’ai réalisé des assets pour les jeux que je réalise à l’IUT
                 mais aussi des dessins juste en tant qu’hobby.
-            </span>
+            </p>
         </div>
         <img alt="love" src="assets/svg_love.svg" />
     </div>
@@ -50,10 +50,10 @@
         <div>
             <span class="title"> Blender </span>
 
-            <span class="paragraph">
+            <p>
                 J’ai récemment commencé à prendre en main <span class="software">Blender</span>. J'ai réalisé
                 quelques modèles 3D.
-            </span>
+            </p>
         </div>
         <img alt="blender" src="assets/svg_blender.svg" />
     </div>
@@ -70,7 +70,7 @@
         color: #e1e6e1;
     }
 
-    .paragraph {
+    p {
         font-family: "Electrolize", sans-serif;
         font-size: 19px;
         color: #e1e6e1;
@@ -128,5 +128,34 @@
 
     a:visited {
         color: #e3d26f;
+    }
+
+    @media screen and (max-width:750px){
+        .title{
+            text-align: center;
+        }
+
+        section > div{
+            flex-direction: column;
+            margin: 0;
+        }
+
+        section > div:nth-child(even) {
+            justify-content: space-around;
+            flex-direction: column;
+            margin: 0;
+        }
+        img{
+            width: 80%;
+            margin: 30px 0;
+            align-self: center;
+        }
+        div>div{
+            margin: 0 5px;
+        }
+        p{
+            text-align: justify;
+            margin: 0;
+        }
     }
 </style>

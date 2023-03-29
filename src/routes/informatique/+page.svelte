@@ -21,14 +21,14 @@
         <div>
             <span class="title"> Développement </span>
 
-            <span class="paragraph">
+            <p>
                 J'aime réaliser des <span class="language">jeux vidéo</span>, concevoir des univers, développer des personnages et construire des défis pour les joueurs. <br>
                 En tant que créatrice de jeux vidéo, j'aimerais pouvoir combiner mes compétences en programmation avec mon intérêt artistique. <br>
                 <br>
                 De plus, le développement de <span class="language">logiciels d'entreprise</span> m'intéresse. J’aime réaliser des applications qui résolvent des problèmes et satisfont l'utilisateur. <br> 
                 <br> Ces deux possibilités de développement me permettraient d'être stimulée intellectuellement, car ce sont des domaines en évolution constante. <br>
                 <br> Connaissances en <span class="language">Java</span>.
-            </span>
+            </p>
         </div>
 
         <img alt="software development" src="assets/svg_software.svg" />
@@ -38,11 +38,11 @@
         <div>
             <span class="title"> Administration système </span>
 
-            <span class="paragraph">
+            <p>
                 J’aime automatiser mes tâches et paramétrer un système. Pour moi, Linux représente un véritable terrain de jeu pour l'exploration et la personnalisation.
                 Connaissances en <span class="language">Bash</span> et
                 <span class="language">Python</span>.
-            </span>
+            </p>
         </div>
 
         <img alt="system" src="assets/svg_system.svg" />
@@ -53,10 +53,10 @@
         <div>
             <span class="title"> Cybersécurité </span>
 
-            <span class="paragraph">
+            <p>
                 J'aimerais faire partie de ceux qui travaillent pour améliorer la sécurité du monde informatique. Je suis motivée pour participer à créer des solutions qui permettront de limiter les menaces en ligne.
                 <br> Le métier de PenTester m'intéresse en particulier dans le domaine de la cybersécurité.
-            </span>
+            </p>
         </div>
 
         <img alt="cybersecurity" src="assets/svg_cybersecurity.svg" />
@@ -66,10 +66,10 @@
         <div>
             <span class="title"> Développement Web </span>
 
-            <span class="paragraph">
+            <p>
                 J'aime exprimer ma créativité au travers de la création de sites
                 web. Mes connaissances en <span class="language"> Svelte </span> sont encore en développement, mais je suis impatiente de développer davantage mes compétences.
-            </span>
+            </p>
         </div>
 
         <img alt="web" src="assets/svg_web.svg" />
@@ -98,7 +98,7 @@
         margin-top: 50px;
     }
 
-    .paragraph {
+    p {
         font-family: "Electrolize", sans-serif;
         font-size: 19px;
         color: #e1e6e1;
@@ -120,6 +120,35 @@
         margin: 200px 0;
         display: flex;
         justify-content: center;
+    }
+    
+    @media screen and (max-width:750px){
+        .title{
+            text-align: center;
+        }
+
+        section > div{
+            flex-direction: column;
+            margin: 0;
+        }
+
+        section > div:nth-child(even) {
+            justify-content: space-around;
+            flex-direction: column;
+            margin: 0;
+        }
+        img{
+            width: 80%;
+            margin: 30px 0;
+            align-self: center;
+        }
+        div>div{
+            margin: 0 5px;
+        }
+        p{
+            text-align: justify;
+            margin: 0;
+        }
     }
 
 </style>
