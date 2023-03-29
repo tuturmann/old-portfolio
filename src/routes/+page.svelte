@@ -141,8 +141,13 @@
             word-wrap: break-word;
         }
 
+        .paragraphBig{
+            text-align: center;
+        }
+
         .mainManon{
             font-size: 2em;
+            margin-left: auto;
         }
     }
 </style>
