@@ -1,7 +1,17 @@
 <script>
     import { now } from "svelte/internal";
     import Header from "../components/Header.svelte";
-   
+
+    function calculateMyAge() {
+        const today = new Date();
+        const birthDay = new Date(2004, 11, 5); // month is 0-11, 5th Dec 2004
+        let age = today.getFullYear() - birthDay.getFullYear();
+        const m = today.getMonth() - birthDay.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDay.getDate())) {
+            age--;
+        }
+        return age;
+    }
 </script>
 
 <svelte:head>
@@ -21,10 +31,8 @@
             <h1>Bienvenue</h1>
 
             <p>
-                J'ai 18 ans et je suis étudiante en BUT Informatique, je recherche une <em
-                    >alternance</em
-                > en développement/système pour ma deuxième et troisième année de
-                BUT.
+                J'ai { calculateMyAge() } ans et je suis étudiante en deuxième année de BUT Informatique, je recherche un <em>stage</em> en 
+                développement d'applications/web du 15 avril à fin juin 2024. (10 semaines)
             </p>
 
             <h1>Contact</h1>
@@ -47,7 +55,7 @@
         <p>
             • Bilingue français/anglais <br />
             • Niveau A2 en espagnol<br />
-            • J’ai commencé à apprendre le turc, le russe et le japonais.<br />
+            • Débutante en turc (en autodidacte).<br />
         </p>
     </div>
 </section>
