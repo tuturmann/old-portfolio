@@ -37,7 +37,8 @@
 
             <h1>Contact</h1>
 
-            <p>
+            <p class="contacts">
+                <a href="/CV.pdf" target='_blank'>Mon CV</a><br/>
                 <a href="mailto:mmanon.leclercq@gmail.com">
                     mmanon.leclercq@gmail.com
                 </a> <br />
@@ -61,7 +62,7 @@
 </section>
 
 <style>
-    a:link {
+    .contacts a {
         color: #e3d26f;
         text-decoration: none;
     }
